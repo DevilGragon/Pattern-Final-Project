@@ -1,0 +1,235 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\diannaochuquan.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 195, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "模式识别大作业 关于"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "手势识别 + 猜拳比赛       V1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (Gragon) All Rights Reserved",IDC_STATIC,42,26,128,8
+    DEFPUSHBUTTON   "确定",IDOK,138,53,50,14,WS_GROUP
+    CTEXT           "Visual Studio 2008 + Opencv 2.3.1",IDC_STATIC,12,54,114,12,SS_CENTERIMAGE
+    CTEXT           "模式识别 3115315017 5084班 高榕",IDC_STATIC,12,42,114,12,SS_CENTERIMAGE
+END
+
+IDD_DIANNAOCHUQUAN_DIALOG DIALOGEX 0, 0, 437, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "猜拳游戏"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "出拳",IDC_BUTTON1,216,180,90,14
+    CONTROL         "",IDC_PICTURE1,"Static",SS_BLACKFRAME,198,30,75,120
+    CTEXT           "电脑出",IDC_STATIC,198,12,24,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT2,288,156,18,14,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "出拳倒计时，请准备",IDC_STATIC,198,156,72,12,SS_CENTERIMAGE
+    LISTBOX         IDC_LIST1,282,30,42,120,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PICTURE2,"Static",SS_BLACKFRAME,6,30,180,138
+    CTEXT           "人出",IDC_STATIC,6,12,24,12,SS_CENTERIMAGE
+    PUSHBUTTON      "打开摄像头",IDC_BUTTON2,48,180,96,14
+    LTEXT           "Gragon:  手势识别+电脑猜拳",IDC_STATIC,336,30,90,12,SS_CENTERIMAGE
+    LTEXT           "软件使用教程：",IDC_STATIC,336,42,90,12,SS_CENTERIMAGE
+    LTEXT           "1.左键单击“打开摄像头”，进",IDC_STATIC,336,54,90,12,SS_CENTERIMAGE
+    LTEXT           "   行手势识别，并根据时间提",IDC_STATIC,336,66,90,12,SS_CENTERIMAGE
+    LTEXT           "   示，出“石头、剪刀、布。”",IDC_STATIC,336,78,90,12,SS_CENTERIMAGE
+    LTEXT           "2.手势识别完成之后，摄像头",IDC_STATIC,336,90,90,12,SS_CENTERIMAGE
+    LTEXT           "   会进入休眠状态，并等待后",IDC_STATIC,336,102,90,12,SS_CENTERIMAGE
+    LTEXT           "   续操作。",IDC_STATIC,336,114,90,12,SS_CENTERIMAGE
+    LTEXT           "3.左键单击“出拳”，进行电脑",IDC_STATIC,336,126,90,12,SS_CENTERIMAGE
+    LTEXT           "   出拳，等待5s后，显示电脑",IDC_STATIC,336,138,90,12,SS_CENTERIMAGE
+    LTEXT           "   结果，并在右边的列表中显",IDC_STATIC,336,150,90,12,SS_CENTERIMAGE
+    LTEXT           "   示各次出拳结果。",IDC_STATIC,336,162,90,12,SS_CENTERIMAGE
+    LTEXT           "4.显示猜拳结果，判断你赢还",IDC_STATIC,336,174,90,12,SS_CENTERIMAGE
+    LTEXT           "   是我赢！",IDC_STATIC,336,186,90,12,SS_CENTERIMAGE
+    LTEXT           "/s",IDC_STATIC,312,156,15,18,SS_CENTERIMAGE
+    CTEXT           "获取的手势",IDC_STATIC,42,198,54,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT3,102,198,40,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "西安交通大学"
+            VALUE "FileDescription", "模式识别大作业"
+            VALUE "FileVersion", "Version 1.0"
+            VALUE "InternalName", "Gragon.exe"
+            VALUE "LegalCopyright", "高榕: (C) <西安交通大学>。保留所有权利。"
+            VALUE "OriginalFilename", "Gragon.exe"
+            VALUE "ProductName", "模式识别大作业"
+            VALUE "ProductVersion", "Version 1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_DIANNAOCHUQUAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 430
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINFRAME           ICON                    "res\\my_gragon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG1                PNG                     "Gragon.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 高榕.模式识别大作业..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\diannaochuquan.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
